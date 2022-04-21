@@ -1,0 +1,11 @@
+{
+    "RaidTimeInSeconds": 180.0,
+    "CanAttach": "true",
+    "CanRaid": "true",
+    "DeleteLockOnRaid": "true",
+    "ToolDamageOnRaid": 100,
+    "RaidTools": [
+        "HDSN_BreachingCharge",
+        "HDSN_BreachingChargeHeavy"
+    ]
+}

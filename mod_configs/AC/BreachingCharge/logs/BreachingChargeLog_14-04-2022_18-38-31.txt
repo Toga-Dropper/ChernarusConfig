@@ -1,0 +1,7 @@
+[14/04/2022-18:53:08]	[PLACED]	[14/04/2022-18:53:08]	A charge has been placed!	 | HDSN_BreachingChargeHeavy, Position: <9324.589844, 6.976689, 1976.689331>, Target: Fence_Gate | Player: TogaD [76561198199362723]
+[14/04/2022-18:53:16]	[ARMED]		[14/04/2022-18:53:16]	A charge has been armed!	 | HDSN_BreachingChargeHeavy, Position: <9324.264648, 7.279022, 1977.910156>, Target: Fence_Gate | Player: TogaD [76561198199362723]
+[14/04/2022-18:54:18]	[DEFUSED]	[14/04/2022-18:54:18]	A charge has been defused!	 | HDSN_BreachingChargeHeavy, Position: <9324.264648, 7.279022, 1977.910156>, Target: Fence_Gate | Defusing Player: TogaD [76561198199362723] | Player: TogaD [76561198199362723]
+[14/04/2022-18:56:41]	[PLACED]	[14/04/2022-18:56:41]	A charge has been placed!	 | HDSN_BreachingChargeHeavy, Position: <9324.786133, 6.963562, 1977.098755>, Target: Fence_Gate | Player: TogaD [76561198199362723]
+[14/04/2022-18:56:46]	[ARMED]		[14/04/2022-18:56:46]	A charge has been armed!	 | HDSN_BreachingChargeHeavy, Position: <9324.332031, 7.503199, 1977.889648>, Target: Fence_Gate | Player: TogaD [76561198199362723]
+[14/04/2022-19:01:46]	[EXPLODED]	[14/04/2022-19:01:46]	A charge has exploded!		 | HDSN_BreachingChargeHeavy, Position: <9324.332031, 7.503199, 1977.889648>, Target: Fence_Gate, Damage done: 30 | Player: TogaD [76561198199362723]
+[14/04/2022-19:01:46]	[DESTROYED]	[14/04/2022-19:01:46]	A target was destroyed!	 | HDSN_BreachingChargeHeavy, Position: <9324.332031, 7.503199, 1977.889648>, Target: Fence_Gate | Player: TogaD [76561198199362723]

@@ -1,0 +1,17 @@
+{
+    "ActionRateLimit": 5,
+    "UIRateLimit": 1,
+    "PermissionReloadTime": 60,
+    "RaidIncrements": 5,
+    "GateRaidTime": 180.0,
+    "TentRaidTime": 180.0,
+    "CanAttachToGates": "true",
+    "CanAttachToTents": "false",
+    "CanRaidGates": "true",
+    "CanRaidTents": "false",
+    "DeleteLockonRaid": "true",
+    "ToolDamageonRaid": 100,
+    "OwnerOnlyDismantle": "true",
+    "CanOpenAnywhere": "true",
+    "CanCloseAnywhere": "true"
+}
