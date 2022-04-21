@@ -1,0 +1,39 @@
+{
+    "M_STATIC_MARKER_ARRAY": [
+        {
+            "M_MARKER_NAME": "MainTZ",
+            "M_ICON_PATH": "VanillaPPMap\\GUI\\Textures\\CustomMapIcons\\iconCar_ca.paa",
+            "M_COLOR": [
+                255.0,
+                0.0,
+                0.0
+            ],
+            "M_POSITION": [
+                8644.74,
+                0.0,
+                13220.0
+            ],
+            "M_ISACTIVE": 1,
+            "M_IS_3D_ACTIVE": 1
+        },
+        {
+            "M_MARKER_NAME": "Maplink",
+            "M_ICON_PATH": "VanillaPPMap\\GUI\\Textures\\CustomMapIcons\\pictureParachute_ca.paa",
+            "M_COLOR": [
+                255.0,
+                255.0,
+                255.0
+            ],
+            "M_POSITION": [
+                8080,
+                0.0,
+                9307.0
+            ],
+            "M_ISACTIVE": 1,
+            "M_IS_3D_ACTIVE": 1
+        }
+    ],
+    "m_CanUse3DMarkers": 0,
+    "m_OwnPositionMarkerDisabled": 1,
+    "m_ForceMapItemOnly": 0
+}

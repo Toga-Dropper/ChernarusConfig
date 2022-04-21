@@ -1,0 +1,69 @@
+// ------------------------------------------------------ Trader Markers -------------------------------------------------------
+
+// MainTrader:
+
+//Contstruction
+<TraderMarker> 			0
+<TraderMarkerPosition>	8647.17, 128.752, 13240.1
+<TraderMarkerSafezone>	50
+
+//Food
+<TraderMarker> 			1
+<TraderMarkerPosition>	8610.91, 128.813, 13231.3
+<TraderMarkerSafezone>	50
+
+//Weapons
+<TraderMarker> 			3
+<TraderMarkerPosition>	8653.73, 126.923, 13209.1
+<TraderMarkerSafezone>	50
+
+//Ammunition
+<TraderMarker> 			2
+<TraderMarkerPosition>	8613.31, 128.752, 13241.8
+<TraderMarkerSafezone>	50
+
+//Vehicles
+<TraderMarker> 			4
+<TraderMarkerPosition>	8643.93, 120.892, 13182.2
+<TraderMarkerSafezone>	30
+<VehicleSpawn>			8657.13, 120.987, 13178.1
+<VehicleSpawnOri>		-101.593,		0,			0
+
+// ------------------------------------------------------ Objects to Spawn ------------------------------------------------------
+//Main Trader Starting ID=0
+
+<Object> 			FS_Forester_Surv
+<ObjectPosition>	8647.17, 128.752, 13240.1
+<ObjectOrientation>	-14.5751, 0,			0
+<ObjectAttachment>	NPC_DUMMY
+
+<Object> 			FS_SidorCap_Char
+<ObjectPosition>	8610.91, 128.813, 13231.3
+<ObjectOrientation>	85.549,			0,			0
+<ObjectAttachment>	NPC_DUMMY
+
+<Object> 			FS_ClearNeboType2_Char
+<ObjectPosition>	8653.73, 126.923, 13209.1
+<ObjectOrientation>	-114.987,			0,			0	
+<ObjectAttachment>	NPC_DUMMY
+
+<Object> 			FS_ShramVSS_Char
+<ObjectPosition>	8613.31, 128.752, 13241.8
+<ObjectOrientation>	23.5,			0,			0
+<ObjectAttachment>	NPC_DUMMY
+
+<Object> 			FS_Barmen_Char
+<ObjectPosition>	8643.93, 120.892, 13182.2
+<ObjectOrientation>	-89.966,			0,			0
+<ObjectAttachment>	NPC_DUMMY
+
+<Object>			Land_Misc_Well_Pump_Blue
+<ObjectPosition>	8649.22, 127.217, 13204.8
+<ObjectOrientation>	0,			0,			0
+
+<Object>			BarrelHoles_Red
+<ObjectPosition>	8619.71, 128.712, 13245.1
+<ObjectOrientation>	0,			0,			0
+		
+//<OpenFile> FileName.txt								// Links to another File; Must be right above <FileEnd>!
+<FileEnd>												// This has to be on the End of this File and is very importand!

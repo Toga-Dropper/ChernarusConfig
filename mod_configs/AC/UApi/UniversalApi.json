@@ -1,0 +1,9 @@
+{
+    "ConfigVersion": "1",
+    "ServerURL": "https://147.135.9.116/",
+    "ServerID": "CDZ_CH",
+    "ServerAuth": "JOsYiFboK1sNVVpTlHWwq1NTRmxFcScF1uX5tN9-q2rwCqSr",
+    "QnAEnabled": 0,
+    "EnableBuiltinLogging": 1,
+    "PromptDiscordOnConnect": 0
+}

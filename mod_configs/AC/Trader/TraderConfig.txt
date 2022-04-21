@@ -1,0 +1,728 @@
+		////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //                                                                                                                //
+        //      If you have any Problems with Configurations here feel free to contact me on Discord: Dr_J0nes#3734       //
+        //                                                                                                                //
+        //      Only Single line Comments work. Don't use Multi line Comments!                                            //
+        //      /* THIS COMMENT WILL CRASH THE SERVER! */                                                                 //
+        //      // THIS COMMENT WORKS!                                                                                    //
+        //																												  //
+        //      Generated with DayZ server customizer http://dayztypes.pro Discord: https://discord.gg/zTrMpjM            //
+        ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	// When changing Prices here keep in Mind that Players
+	// can just unpack the Ammoboxes and sell the Ammo separately!
+	// Originally the Ammoboxes buying Price is 20% less than
+	// buying single Ammo. The Selling Price is the same as
+	// selling the Ammo separately.
+
+	// <Trader Name>  (first Trader has ID = 0, second Trader has ID = 1, and so on..)	
+	// <Category Name>
+	// Item Classname, Quantity, Buyvalue, Sellvalue
+	// Quantity * means max value; 
+	// Quantity V means Vehicle; 
+	// Quantity VNK means Vehicle without Key;
+	// Quantity M means Magazine; 
+	// Quantity W means Weapon; 
+	// Quantity S means Steack Meat; 
+	// Quantity K means Key Duplication
+	// Buyvalue -1 means it can not be bought
+	// Sellvalue -1 means it can not be selled
+
+// Currency Name (Only used for the Text in the upper right Corner of the Trader Menu)
+// Currency Classname, Currency Money Value
+<CurrencyName> #tm_ruble							
+	<Currency> MoneyRuble1, 	1					
+	<Currency> MoneyRuble5, 	5
+	<Currency> MoneyRuble10, 	10
+	<Currency> MoneyRuble25, 	25
+	<Currency> MoneyRuble50, 	50
+	<Currency> MoneyRuble100, 	100
+	<Currency> AC_Money_Ruble_500, 	500
+	<Currency> AC_Money_Ruble_1000, 	1000
+<Trader>Hardware Trader // ID=0
+	<Category>Tools (small)
+		Screwdriver,                                                           *,                   5000,                1000
+		Wrench,                                                                *,                   10000,               1000
+		SewingKit,                                                             *,                   2000,                1000
+		Pliers,                                                                *,                   10000,               1000
+		LeatherSewingKit,                                                      *,                   2500,                1000
+		Whetstone,                                                             *,                   5000,                1000
+		Hammer,                                                                *,                   25000,               5000
+		Hacksaw,                                                               *,                   25000,               5000
+		HandSaw,                                                               *,                   35000,               5000
+		WeaponCleaningKit,                                                     *,                   -1,                  1000
+		HuntingKnife,                                                          *,                   -1,                  2000
+		Hatchet,                                                               *,                   50000,               10000
+		CombatKnife,                                                           *,                   -1,                  1000
+		Machete,                                                               *,                   -1,                  1000
+		CrudeMachete,                                                          *,                   2500,                1000
+		OrientalMachete,                                                       *,                   -1,                  1000
+		KukriKnife,                                                            *,                   -1,                  1000
+		FangeKnife,                                                            *,                   -1,                  1000
+//		ChernarusMap,                                                          *,                   -1,                  1000
+		Lockpick,                                                              *,                   -1,                  5000
+		Binoculars,                                                            *,                   -1,                  1000
+		FishingRod,                                                            *,                   10000,               1000
+	<Category>Tools (big)
+		FarmingHoe,                                                            *,                   10000,               5000
+		LugWrench,                                                             *,                   1000,                -1
+		Crowbar,                                                               *,                   10000,               5000
+		Shovel,                                                                *,                   25000,               5000
+		Pickaxe,                                                               *,                   25000,               5000
+		SledgeHammer,                                                          *,                   25000,               5000
+		PipeWrench,                                                            *,                   1000,                -1
+		WoodAxe,                                                               *,                   50000,               5000
+		FirefighterAxe,                                                        *,                   55000,               5000
+	<Category>Electronics
+		Battery9V,                                                             *,                   500,                 250
+		PersonalRadio,                                                         *,                   5000,                1000
+		ElectronicRepairKit,                                                   *,                   -1,                	 2500
+		CableReel,                                                             *,                   5000,                1500
+		BatteryCharger,                                                        *,                   -1,               	 2500
+		BaseRadio,                                                             *,                   5000,                2000
+		PowerGenerator,                                                        *,                   100000,              10000
+	<Category>Fire & Lights
+		Roadflare,                                                             *,                   1000,                 1000
+		Matchbox,                                                              *,                   1000,                 1000
+		Flashlight,                                                            *,                   5000,                  -1
+		Headtorch_Black,                                                       *,                   5000,                  -1
+		UniversalLight,                                                        *,                   5000,                  -1
+		Headtorch_Grey,                                                        *,                   5000,                  -1
+		Spotlight,                                                             *,                   10000,               2500
+	<Category>Hunting Supplies
+		PurificationTablets,                                                   *,                   5000,                1000
+		Pot,                                                                   *,                   5000,                1000
+		Tripod,                                                                *,                   5000,                1000
+		PortableGasLamp,                                                       *,                   5000,                1000
+		PortableGasStove,                                                      *,                   5000,                1000
+	<Category>Hardware Supplies
+		Paper,                                                                 *,                   -1,                  200
+		Rope,                                                                  *,                   2500,                1000
+		AntiPestsSpray,                                                        *,                   5000,                1000
+		MetalWire,                                                             *,                   20000,                  2500
+		EpoxyPutty,                                                            *,                   -1,                  1000
+		DuctTape,                                                              *,                   2500,                1000
+		XmasLights,                                                            *,                   2500,                -1
+		HandcuffKeys,                                                          *,                   -1,                  1000
+		Handcuffs,                                                             *,                   -1,                  1000
+		Netting,                                                               1,                   -1,                  1000
+		BurlapSack,                                                            *,                   -1,                  1000
+		WoodenPlank,                                                           20,                  -1,                  10000
+		MetalPlate,                                                            10,                  -1,                  50000
+		SmallProtectorCase,                                                    *,                   1000,                1000
+		CanisterGasoline,                                                      *,                   50000,               10000
+		NailBox,                                                               *,                   12500,               1000
+		BarbedWire,                                                            *,                   25000,               5000
+		Camonet,                                                               *,                   10000,               5000
+		BarrelHoles_Blue,                                                      *,                   -1,                  10000
+		BarrelHoles_Green,                                                     *,                   -1,                  10000
+		BarrelHoles_Red,                                                       *,                   -1,                  10000
+		BarrelHoles_Yellow,                                                    *,                   -1,                  10000
+		Barrel_Blue,                                                           *,                   -1,                  10000
+		Barrel_Green,                                                          *,                   -1,                  10000
+		Barrel_Red,                                                            *,                   -1,                  10000
+		Barrel_Yellow,                                                         *,                   -1,                  10000
+		SeaChest,                                                              *,                   -1,                  10000
+		CodeLock,                                                              *,                   -1,                  10000
+//		HescoBox,                                                              *,                   -1,                  -1
+	<Category>Special <3
+		Chopper_Hinge,                                                         1,                   5000,                1000
+		Chopper_Bracket,                                                       1,                   2500,                1000
+		Chopper_Floor_Lamp,                                                    *,                   10000,               5000
+	<Category>Kits
+		Msp_LargeAmmoBox,                                                      *,                   25000,               -1
+		Msp_AmmoCrate,                                                         *,                   25000,               -1
+		Msp_GrenadeBox,                                                        *,                   25000,               -1
+		Msp_TreasureChest,                                                     *,                   50000,               -1
+		Msp_ToolsBench_Blue_Kit,                                               *,                   50000,               -1
+		Msp_ToolsBench_Grey_Kit,                                               *,                   50000,               -1
+		Msp_ToolsBench_Red_Kit,                                                *,                   50000,               -1
+		Msp_MilitaryCrate_Brown,                                               *,                   75000,               -1
+		Msp_MilitaryCrate_Green,                                               *,                   75000,               -1
+		Msp_MilitaryCrate_Grey,                                                *,                   75000,               -1
+		Msp_MilitaryCrate_Olive,                                               *,                   75000,               -1
+		Msp_MilitaryCrate_Tan,                                                 *,                   75000,               -1
+		Msp_Gazebo_Kit,                                                        *,                   150000,              -1
+		Msp_GunCabinet_Kit,                                                    *,                   125000,              -1
+		Msp_DoubleGunRack_Kit,                                                 *,                   250000,              -1
+		Msp_GunRack_Kit,                                                       *,                   175000,              -1
+		Msp_MilitaryLocker_Kit,                                                *,                   200000,              -1
+		Msp_StorageBox_Kit,                                                    *,                   100000,              -1
+		Msp_SoloLocker_Kit,                                                    *,                   100000,              -1
+		Msp_SoloLocker_Black_Kit,                                              *,                   100000,              -1
+		Msp_SoloLocker_White_Kit,                                              *,                   100000,              -1
+		Msp_SoloLocker_Green_Kit,                                              *,                   100000,              -1
+		Msp_SoloLocker_Red_Kit,                                                *,                   100000,              -1
+		Msp_SoloLocker_RedRusty_Kit,                                           *,                   100000,              -1
+		Msp_SoloLocker_Yellow_Kit,                                             *,                   100000,              -1
+		Msp_OldLocker_Kit,                                                     *,                   175000,              -1
+		Msp_OldLocker_Green_Kit,                                               *,                   175000,              -1
+		Msp_FourDoor_MilitaryLocker_Kit,                                       *,                   175000,              -1
+		Msp_FourDoor_MilitaryLocker_Green_Kit,                                 *,                   175000,              -1
+		Msp_WoodenGunRack_Kit,                                                 *,                   175000,              -1
+		Msp_RifleSafe_Kit,                                                     *,                   150000,              -1
+		Msp_RifleSafe_Grey_Kit,                                                *,                   150000,              -1
+		Msp_RifleSafe_Green_Kit,                                               *,                   150000,              -1
+		Msp_RifleSafe_Purple_Kit,                                              *,                   150000,              -1
+		Msp_RifleSafe_Tan_Kit,                                                 *,                   150000,              -1
+		Msp_Gunwall_Kit,                                                       *,                   250000,              -1
+		Msp_Greenhouse_Kit,                                                    *,                   250000,              -1
+		Msp_GreenhouseWood_Kit,                                                *,                   250000,              -1
+		rf_helipad_kit,                                                        *,                   500000,              -1
+	<Category>Flags
+		Flag_APA,                                                              *,                   -1,                  5000
+		Flag_Altis,                                                            *,                   -1,                  5000
+		Flag_BabyDeer,                                                         *,                   -1,                  5000
+		Flag_Bear,                                                             *,                   -1,                  5000
+		Flag_Bohemia,                                                          *,                   -1,                  5000
+		Flag_BrainZ,                                                           *,                   -1,                  5000
+		Flag_CDF,                                                              *,                   -1,                  5000
+		Flag_CHEL,                                                             *,                   -1,                  5000
+		Flag_CMC,                                                              *,                   -1,                  5000
+		Flag_Cannibals,                                                        *,                   -1,                  5000
+		Flag_Chedaki,                                                          *,                   -1,                  5000
+		Flag_Chernarus,                                                        *,                   -1,                  5000
+		Flag_DayZ,                                                             *,                   -1,                  5000
+		Flag_HunterZ,                                                          *,                   -1,                  5000
+		Flag_Livonia,                                                          *,                   -1,                  5000
+		Flag_LivoniaArmy,                                                      *,                   -1,                  5000
+		Flag_LivoniaPolice,                                                    *,                   -1,                  5000
+		Flag_NAPA,                                                             *,                   -1,                  5000
+		Flag_NSahrani,                                                         *,                   -1,                  5000
+		Flag_Pirates,                                                          *,                   -1,                  5000
+		Flag_RSTA,                                                             *,                   -1,                  5000
+		Flag_Refuge,                                                           *,                   -1,                  5000
+		Flag_Rooster,                                                          *,                   -1,                  5000
+		Flag_SSahrani,                                                         *,                   -1,                  5000
+		Flag_Snake,                                                            *,                   -1,                  5000
+		Flag_TEC,                                                              *,                   -1,                  5000
+		Flag_UEC,                                                              *,                   -1,                  5000
+		Flag_White,                                                            *,                   -1,                  5000
+		Flag_Wolf,                                                             *,                   -1,                  5000
+		Flag_Zenit,                                                            *,                   -1,                  5000
+	<Category>Discord Raid Alarm
+//		RaidAlarm_ServerBattery,                                                 *,                   -1,                  5000
+		RaidAlarm_Bell,                                                          *,                   250000,              50000
+//		RaidAlarm_Server,                                                        *,                   -1,                  5000
+//		RaidAlarm_PowerSupply,                                                   *,                   -1,                  5000
+//		RaidAlarm_ServerCluster,                                                 *,                   -1,                  5000
+//		RaidAlarm_CommunicationsArray,                                           *,                   -1,                  5000
+//		RaidAlarm_Dish,                                                          *,                   -1,                  5000		
+<Trader>Survival Trader // ID=1
+	<Category>Packaged Food
+		Zagorky,                                                               *,                   10000,               250
+		ZagorkyChocolate,                                                      *,                   10000,               250
+		ZagorkyPeanuts,                                                        *,                   10000,               250
+		PowderedMilk,                                                          *,                   10000,               250
+		BoxCerealCrunchin,                                                     *,                   -1,                  350
+		Rice,                                                                  *,                   -1,                  350
+		Marmalade,                                                             *,                   -1,                  350
+		PeachesCan,                                                            *,                   -1,                  350
+		SardinesCan,                                                           *,                   12500,               200
+		TunaCan,                                                               *,                   12500,               200
+		SpaghettiCan,                                                          *,                   -1,                  350
+		BakedBeansCan,                                                         *,                   -1,                  350
+		TacticalBaconCan,                                                      *,                   -1,                  350
+		BrisketSpread,                                                         *,                   8000,                150
+		CatFoodCan,                                                            *,                   8000,                150
+		Chips,                                                                 *,                   8000,                150
+		Crackers,                                                              *,                   8000,                150
+		DogFoodCan,                                                            *,                   8000,                150
+		Honey,                                                                 *,                   -1,                  350
+		Lunchmeat,                                                             *,                   -1,                  350
+		Pajka,                                                                 *,                   -1,                  350
+		Pate,                                                                  *,                   -1,                  150
+		PorkCan,                                                               *,                   -1,                  350
+		SaltySticks,                                                           *,                   -1,                  150
+	<Category>CDZ-Specials
+		Bear_Pink,                                                             *,                   -1,                  50000
+//		CJ_Keycard_Yellow,                                                     *,                   125000,              10000
+//		CJ_Keycard_Green,                                                      *,                   -1,                  50000
+//		CJ_Keycard_Red,                                                        *,                   250000,              20000
+//		CJ_Keycard_Blue,                                                       *,                   -1,                  30000
+//		CJ_Keycard_Violet,                                                     *,                   -1,                  30000
+//		CJ_Keycard_White,                                                      *,                   -1,                  30000
+//		CJ_Keycard_Black,                                                      *,                   -1,                  50000
+	<Category>Seeds & Lime
+		TomatoSeedsPack,                                                       *,                   5000,                2500
+		PepperSeedsPack,                                                       *,                   5000,                2500
+		ZucchiniSeedsPack,                                                     *,                   5000,                2500
+		PumpkinSeedsPack,                                                      *,                   7500,                5000
+		Pumpkin,                                                    		   *,                   5000,                2500
+		Zucchini,                                                    		   *,                   5000,                1000
+		GreenBellPepper,                                                       *,                   5000,                1500
+		Tomato,                                                     	`	   *,                   7500,                750		
+//		CannabisSeedsPack,                                                     *,                   -1,                  1000
+		GardenLime,                                                            *,                   10000,                5000
+	<Category>Meat
+//		ChickenBreastMeat,                                                     S,                   -1,                  -1
+//		GoatSteakMeat,                                                         S,                   -1,                  -1
+//		SheepSteakMeat,                                                        S,                   -1,                  -1
+//		PigSteakMeat,                                                          S,                   -1,                  -1
+//		BoarSteakMeat,                                                         S,                   -1,                  300
+		WolfSteakMeat,                                                         S,                   -1,                  2500
+		DilSteakMeat,                                                         S,                   -1,                  5000		
+		BearSteakMeat,                                                         S,                   -1,                  10000
+		RaptorSteakMeat,                                                       S,                   -1,                  25000
+		TrexSteakMeat,                                                         S,                   -1,                  25000		
+		DeerSteakMeat,                                                         S,                   -1,                  200
+		CowSteakMeat,                                                          S,                   -1,                  150
+		Sardines,                                                              S,                   -1,                  750
+		Carp,                                                                  S,                   -1,                  750
+		Mackerel,                                                              S,                   -1,                  750
+	<Category>Animal Parts
+		Bone,                                                                  *,                   -1,                  1000
+		Lard,                                                                  *,                   -1,                  1000
+		Guts,                                                                  *,                   -1,                  1000
+		SmallGuts,                                                             *,                   -1,                  1000
+	<Category>Hides
+		BearPelt,                                                              *,                   -1,                  25000
+		DeerPelt,                                                              *,                   -1,                  2500
+		WolfPelt,                                                              *,                   -1,                  10000
+		TannedLeather,                                                         *,                   -1,                  10000
+	<Category>Medical Supplies
+		BandageDressing,                                                       1,                   -1,                  500
+		BloodTestKit,                                                          *,                   -1,                  1000
+		Thermometer,                                                           *,                   -1,                  1000
+		DisinfectantSpray,                                                     *,                   -1,                  2500
+		Syringe,                                                               *,                   -1,                  250
+		Heatpack,                                                              *,                   -1,                  250
+		StartKitIV,                                                            *,                   -1,                  1000
+		SalineBag,                                                             *,                   -1,                  2500
+		BloodBagEmpty,                                                         *,                   -1,                  1000
+	<Category>Medications
+		CharcoalTablets,                                                       *,                   -1,                  1500
+		IodineTincture,                                                        *,                   -1,                  2500
+		DisinfectantAlcohol,                                                   *,                   -1,                  2500
+		VitaminBottle,                                                         *,                   -1,                  5000
+		TetracyclineAntibiotics,                                               *,                   -1,                  10000
+		PainkillerTablets,                                                     *,                   -1,                  5000
+		Epinephrine,                                                           *,                   -1,                  5000
+		Morphine,                                                              *,                   -1,                  5000
+		AntiChemInjector,                                                      *,                   100000,              25000
+	<Category>Money Exchange
+		MoneyRuble1,                                                           1,                   1,                   -1
+		MoneyRuble5,                                                           1,                   5,                   -1
+		MoneyRuble10,                                                          1,                   10,                  -1
+		MoneyRuble25,                                                          1,                   25,                  -1
+		MoneyRuble50,                                                          1,                   50,                  -1
+		MoneyRuble100,                                                         1,                   100,                 -1
+		AC_Money_Ruble_500, 													1,					500, 				-1
+		AC_Money_Ruble_1000, 													1,					1000,				-1
+	<Category>LargeTents
+		MediumTent,                                                            *,                 25000,                  5000
+		CarTent,                                                               *,                   -1,                  10000
+		LargeTent,                                                             *,                   -1,                  15000
+<Trader>Weapon Trader // ID=2
+	<Category>Melee
+		BrassKnuckles_Shiny,                                                   W,                   500,                 -1
+//		StunBaton,                                                             W,                   500,                 25
+		Pipe,                                                                  W,                   500,                 -1
+//		CattleProd,                                                            W,                   500,                 25
+		BaseballBat,                                                           W,                   500,                 -1
+		Sword,                                                                 W,                   -1,                  5000
+		NailedBaseballBat,                                                     W,                   2500,                2500
+		Msp_GoodNightBat,                                                      W,                   20000,               7500
+		Msp_BeanBasher,                                                        W,                   20000,               7500
+		Msp_BlunderBat,                                                        W,                   20000,               7500
+		Msp_BassAxe,                                                           W,                   20000,               7500
+		Msp_PipeAxe,                                                           W,                   20000,               7500
+	<Category>Sidearms
+		Flaregun,                                                              W,                   -1,                  1000
+		MakarovIJ70,                                                           W,                   5000,                1250
+		CZ75,                                                                  W,                   5000,                1250
+		FNX45,                                                                 W,                   5000,                1250
+		Glock19,                                                               W,                   5000,                1250
+		MKII,                                                                  W,                   5000,                1250
+		Colt1911,                                                              W,                   5000,                1250
+		Magnum,                                                                W,                   5000,                1250
+		Deagle,                                                                W,                   -1,                  1250
+		Deagle_Gold,                                                           W,                   -1,                  3000
+//		StechkinAPS,                                                           W,                   -1,                  3000
+		Mk22,                                                                  W,                   4000,                1250
+		Engraved1911,                                                          W,                   -1,                  3000
+	<Category>Rifles
+		Izh18,                                                                 W,                   20000,               3000
+		Mosin9130,                                                             W,                   20000,               3000
+		CZ527,                                                                 W,                   20000,               3000
+		Winchester70,                                                          W,                   20000,               3000
+		SKS,                                                                   W,                   20000,               3000
+		B95,                                                                   W,                   20000,               3000
+//		Kar98real,                                                             W,                   20000,               3000
+		Scout,                                                                 W,                   20000,               3000
+		Scout_Chernarus,                                                       W,                   20000,               3000
+		Rev_WA2000,                                                            W,                   -1,                  5000
+		Rev_R700,                                                              W,                   -1,                  5000
+//		Rev_M1Garand,                                                          W,                   -1,                  5000
+		JebsGuns_GoldenFang,                                                   W,                   -1,                  5000
+		JebsGuns_M1A_Sneaks,                                                   W,                   -1,                  5000
+	<Category>Shotguns
+		Mp133Shotgun,                                                          W,                  20000,                3000
+		Izh43Shotgun,                                                          W,                  20000,                3000
+		Saiga,                                                                 W,                   -1,                  4000
+		Rev_Spas12,                                                            W,                   -1,                  5000
+	<Category>Submachine Guns
+		CZ61,                                                                  W,                   25000,               5000
+		UMP45,                                                                 W,                   -1,                  5000
+		MP5K,                                                                  W,                   -1,                  5000
+		AKS74U,                                                                W,                   -1,                  5000
+		AKS74U_Black,                                                          W,                   -1,                  5000
+		AKS74U_Green,                                                          W,                   -1,                  5000
+		MP7,                                                                   W,                   -1,                  5000
+//		VityazSN,                                                              W,                   -1,                  5000
+		JebsGuns_KrissVector_Black,                                            W,                   -1,                  5000
+	<Category>Assault Rifles
+		FAL,                                                                   W,                   -1,                  6500
+		AKM,                                                                   W,                   -1,                  6500
+		AK101,                                                                 W,                   -1,                  6500
+		AK101_Black,                                                           W,                   -1,                  6500
+		AK101_Green,                                                           W,                   -1,                  6500
+		AK74,                                                                  W,                   -1,                  6500
+		AK74_Green,                                                            W,                   -1,                  6500
+		AK74_Black,                                                            W,                   -1,                  6500
+		M4A1,                                                                  W,                   -1,                  6500
+		M4A1_Black,                                                            W,                   -1,                  6500
+		M4A1_Green,                                                            W,                   -1,                  6500
+		M16A2,                                                                   W,                   -1,                6500
+		M1A,                                                                   W,                   -1,                  6500		
+		M16,                                                                   W,                   -1,                  6500
+		SCAR,                                                                  W,                   -1,                  7000
+		Rev_HK417,                                                             W,                   -1,                  7000
+		Rev_AK15,                                                              W,                   -1,                  7000
+		Rev_AKU15,                                                             W,                   -1,                  7000
+		Rev_AK12,                                                              W,                   -1,                  7000
+		Rev_AKU12,                                                             W,                   -1,                  7000
+		Rev_AK19,                                                              W,                   -1,                  7000
+		Rev_AKU19,                                                             W,                   -1,                  7000
+		M14,                                                                   W,                   -1,                  7000
+		Rev_ARX160,                                                            W,                   -1,                  7500
+		Rev_HoneyBadger300BO_Black,                                            W,                   -1,                  7500
+		Rev_HoneyBadger300BO_Green,                                            W,                   -1,                  7500
+		Rev_HoneyBadger300BO_Tan,                                              W,                   -1,                  7500
+		Rev_HoneyBadger300BO_GreenCamo,                                        W,                   -1,                  7500
+		Rev_HoneyBadger300BO_TanCamo,                                          W,                   -1,                  7500
+		Rev_AR15,                                                              W,                   -1,                  7500
+		Rev_ACR_Black,                                                         W,                   -1,                  7500
+		Rev_ACR_Tan,                                                           W,                   -1,                  7500
+		Rev_ACR17,                                                             W,                   -1,                  7500
+		REV_FAMAS,                                                             W,                   -1,                  7500
+		JebsGuns_MBR_Black,                                                    W,                   -1,                  7500
+		JebsGuns_MBR_Tan,                                                      W,                   -1,                  7500
+		JebsGuns_L85A2_Black,                                                  W,                   -1,                  7500
+		Rev_HT76,                                                              W,                   -1,                  7500
+		Rev_Beowulf,                                                           W,                   -1,                  7500
+		Rev_SRSA2,                                                             W,                   -1,                  7500		
+		Rev_FALTactical,                                                       W,                   -1,                  7500		
+	<Category>Sniper Rifles
+		VSS,                                                                   W,                   -1,                  10000
+		JebsGuns_VSSK,                                                         W,                   -1,                  10000
+		ASVAL,                                                                 W,                   -1,                  10000
+		Rev_M110_Black,                                                        W,                   -1,                  10000
+		Rev_M110_Tan,                                                          W,                   -1,                  10000
+		Rev_SR25_Tan,                                                          W,                   -1,                  10000
+		SVD,                                                                   W,                   -1,                  10000
+		Rev_Tac21,                                                             W,                   -1,                  10000
+		AWMreal,                                                               W,                   -1,                  10000
+		Rev_M200,                                                              W,                   -1,                  10000
+		Rev_M200_Black,                                                        W,                   -1,                  10000
+		Rev_M96,                                                               W,                   -1,                  10000
+	<Category>Specialist Guns
+		Rev_RPK16_762,                                                         W,                   -1,                  12500
+		Rev_RPK16,                                                             W,                   -1,                  12500
+		Rev_RPK16_556,                                                         W,                   -1,                  12500
+		Rev_M134,                                                              W,                   -1,                  25000
+		Rev_MG3,                                                               W,                   -1,                  25000
+		SFP_PKP,                                                               W,                   -1,                  25000
+		FS_GausRifle,                                                          W,                   -1,                  25000
+		SFP_9A91,                                                              W,                   -1,                  25000
+		SFP_Galil,                                                             W,                   -1,                  25000	
+<Trader>Attachments and Ammo // ID=3
+	<Category>Ammunition
+		Ammo_380,                                                              10,                  1000,                20
+		Ammo_9x19,                                                             10,                  1000,                20
+		Ammo_22,                                                               10,                  1000,                20
+		Ammo_45ACP,                                                            10,                  1000,                20
+		Ammo_12gaPellets,                                                      10,                  2000,                20
+		Ammo_12gaSlug,                                                         10,                  2000,                20
+		Ammo_9x39,                                                             10,                  2000,                20
+		Ammo_9x39AP,                                                           10,                  2000,                30
+		Ammo_308Win,                                                           10,                  2000,                30
+		Ammo_545x39,                                                           10,                  2000,                30
+		Ammo_556x45,                                                           10,                  2000,                30
+		Ammo_762x39,                                                           10,                  2000,                30
+		Ammo_762x54,                                                           10,                  2000,                60
+		Ammo_556x45Tracer,                                                     10,                  2000,                50
+		Ammo_545x39Tracer,                                                     10,                  2000,                50
+		Ammo_308WinTracer,                                                     10,                  2000,                50
+		Ammo_762x39Tracer,                                                     10,                  2000,                50
+		Ammo_Flare,                                                            10,                  2000,                70
+		Ammo_FlareBlue,                                                        10,                  2000,                70
+		Ammo_FlareGreen,                                                       10,                  2000,                70
+		Ammo_FlareRed,                                                         10,                  2000,                70
+		Ammo_762x54Tracer,                                                     10,                  -1,                120
+		Ammo_300WinMagnum,                                                     10,                  -1,                120
+		Ammo_PowerGaus,                                                        10,                  -1,                120		
+		Rev_Ammo_300BO,                                                        10,                  2000,                120
+		Rev_Ammo_408,                                                          10,                  2000,                120
+		Rev_Ammo_338,                                                          10,                  1000,                120
+		Rev_Ammo_68SPC,                                                        10,                  2000,                120
+		Rev_Ammo_50BW,                                                         10,                  -1,                120
+		JebsGuns_Ammo_45_70,                                                   10,                  1000,                120
+		AmmoBox_380_35rnd,                                                     *,                   -1,                150
+		AmmoBox_9x19_25rnd,                                                    *,                   -1,                150
+		AmmoBox_45ACP_25rnd,                                                   *,                   -1,                150
+		AmmoBox_22_50Rnd,                                                      *,                   -1,                150
+		AmmoBox_00buck_10rnd,                                                  *,                   -1,                150
+		AmmoBox_12gaSlug_10Rnd,                                                *,                   -1,                150
+		AmmoBox_9x39_20Rnd,                                                    *,                   -1,                150
+		AmmoBox_9x39AP_20Rnd,                                                  *,                   -1,                150
+		AmmoBox_308Win_20Rnd,                                                  *,                   -1,                150
+		AmmoBox_545x39_20Rnd,                                                  *,                   -1,                150
+		AmmoBox_556x45_20Rnd,                                                  *,                   -1,                150
+		AmmoBox_762x39_20Rnd,                                                  *,                   -1,                150
+		AmmoBox_762x54_20Rnd,                                                  *,                   -1,                150
+		AmmoBox_308WinTracer_20Rnd,                                            *,                   -1,                210
+		AmmoBox_545x39Tracer_20Rnd,                                            *,                   -1,                210
+		AmmoBox_556x45Tracer_20Rnd,                                            *,                   -1,                210
+		AmmoBox_762x39Tracer_20Rnd,                                            *,                   -1,                210
+		AmmoBox_762x54Tracer_20Rnd,                                            *,                   -1,                240
+		Ammobox_46x30_25Rnd,                                                   *,                   -1,                200
+		AmmoBox_8mm_15rnd,                                                     *,                   -1,                200
+		AmmoBox_338_15rnd,                                                     *,                   -1,                200
+	<Category>Magazines
+		Mag_IJ70_8Rnd,                                                         M,                   5000                750
+		Mag_Ruger1022_30Rnd,                                                   M,                   5000                750
+		Mag_CZ75_15Rnd,                                                        M,                   5000                750
+		Mag_Glock_15Rnd,                                                       M,                   5000                750
+		Mag_MKII_10Rnd,                                                        M,                   5000                750
+		Mag_Mk22_14Rnd,                                                        M,                   5000                750
+		Mag_1911_7Rnd,                                                         M,                   5000                750
+		Mag_FNX45_15Rnd,                                                       M,                   5000                750
+		Mag_CZ527_5rnd,                                                        M,                   5000                750
+		Mag_CZ61_20Rnd,                                                        M,                   5000                750
+		Mag_UMP_25Rnd,                                                         M,                   5000                750
+		Mag_MP5_30Rnd,                                                         M,                   5000                750
+		Mag_FAL_20Rnd,                                                         M,                   -1,                750
+//		Mag_Saiga_5Rnd,                                                        M,                   -1,                750
+//		Mag_Saiga_8Rnd,                                                        M,                   -1,                750
+		Mag_Saiga_Drum20Rnd,                                                   M,                   -1,                750
+		Mag_Scout_5Rnd,                                                        M,                   -1,                750
+		Mag_AKM_30Rnd,                                                         M,                   -1,                750
+		Mag_AKM_Drum75Rnd,                                                     M,                   -1,                2000
+		Mag_AK101_30Rnd,                                                       M,                   -1,                750
+		Mag_AK74_30Rnd,                                                        M,                   -1,                750
+		Mag_STANAG_30Rnd,                                                      M,                   -1,                750
+		Mag_STANAGCoupled_30Rnd,                                               M,                   -1,                2000
+//		Mag_CMAG_10Rnd,                                                        M,                   -1,                750
+//		Mag_CMAG_20Rnd,                                                        M,                   -1,                750
+//		Mag_CMAG_30Rnd,                                                        M,                   -1,                750
+		Mag_CMAG_40Rnd,                                                        M,                   -1,                1500
+		Mag_VSS_10Rnd,                                                         M,                   -1,                2000
+		Mag_SVD_10Rnd,                                                         M,                   -1,                2000
+		Mag_308WinSnaploader_2Rnd,                                             M,                   -1,                2000
+		Mag_AWMreal_5Rnd,                                                      M,                   -1,                2000
+		Mag_M14_20Rnd,                                                         M,                   -1,                2000
+		Mag_MP7_40Rnd,                                                         M,                   -1,                2000
+		Mag_APS_20Rnd,                                                         M,                   -1,                2000
+		Mag_Vityaz_30Rnd,                                                      M,                   -1,                2000
+		Mag_VAL_20Rnd,                                                         M,                   -1,                2000
+		Rev_Mag_WA2000_5rnd,                                                   M,                   -1,                2000
+		Rev_Mag_ARX160_30rnd,                                                  M,                   -1,                2000
+		Rev_Mag_Tac21_5rnd,                                                    M,                   -1,                2000
+		Rev_Mag_HoneyBadger_30rnd,                                             M,                   -1,                2000
+		Rev_Mag_HoneyBadger_50rnd,                                             M,                   -1,                2000
+		Rev_Mag_HoneyBadger_100rnd,                                            M,                   -1,                2000
+		Rev_Mag_M200_7rnd,                                                     M,                   -1,                2000
+		Rev_Mag_R700_7rnd,                                                     M,                   -1,                2000
+		Rev_Mag_AK15_30rnd,                                                    M,                   -1,                2000
+		Rev_Mag_AK12_30rnd,                                                    M,                   -1,                2000
+		Rev_Mag_AK19_30rnd,                                                    M,                   -1,                2000
+		Rev_Mag_RPK16_75rnd_762,                                               M,                   -1,                2000
+		Rev_Mag_RPK16_96rnd,                                                   M,                   -1,                2000
+		Rev_Mag_RPK16_96rnd_556,                                               M,                   -1,                2000
+		Rev_Mag_ACR_30rnd,                                                     M,                   -1,                2000
+		Rev_Mag_M110_10rnd,                                                    M,                   -1,                2000
+		Rev_Mag_M110_20rnd,                                                    M,                   -1,                2000
+		Rev_Mag_M134_250rnd,                                                   M,                   -1,                7500
+		Rev_Mag_Beowulf_10rnd,                                                 M,                   -1,                2000
+		Rev_Mag_SRSA2_10rnd,                                                   M,                   -1,                2000
+		Rev_Mag_SR25_10rnd,                                                    M,                   -1,                2000
+		Rev_Mag_SR25_20rnd,                                                    M,                   -1,                2000
+		Rev_Mag_ACR17_30rnd,                                                   M,                   -1,                2000
+		REV_Mag_FAMAS_30rnd,                                                   M,                   -1,                2000
+		Rev_Mag_MG3_75rnd,                                                     M,                   -1,                2000
+		Rev_Mag_HT76_30Rnd,                                                    M,                   -1,                2000
+		Rev_Mag_HK417_20rnd,                                                   M,                   -1,                2000
+		JebsGuns_Mag_M1A_20rnd_45_70,                                          M,                   -1,                2000
+		JebsGuns_Mag_L85A2_30rnd,                                              M,                   -1,                2000
+		JebsGuns_Mag_KrissVector_30rnd,                                        M,                   -1,                2000
+		JebsGuns_Mag_VSSK_5rnd,                                                M,                   -1,                2000
+		Rev_Mag_M96_5rnd,                                                      M,                   -1,                2000
+		Mag_Bat_Gaus_10Rnd													   M,                   -1,                  10000
+		SFP_PKP_BoxMag												 		   M,                   -1,                  10000
+		SFP_9A91_Mag_20rnd													   M,                   -1,                  10000
+		SFP_Mag_Galil_35rnd												 	   M,                   -1,                  10000		
+	<Category>Handguards
+		MP5_PlasticHndgrd,                                                     *,                   1000,                200
+		MP5_RailHndgrd,                                                        *,                   1000,                200
+		AK74_Hndgrd,                                                           *,                   1000,                200
+		AK_WoodHndgrd,                                                         *,                   1000,                200
+		AK_RailHndgrd,                                                         *,                   1000,                200
+		AK_PlasticHndgrd,                                                      *,                   1000,                200
+		M4_PlasticHndgrd,                                                      *,                   1000,                200
+		M4_RISHndgrd,                                                          *,                   1000,                200
+		M4_MPHndgrd,                                                           *,                   1000,                200
+	<Category>Buttstocks
+		MP5k_StockBttstck,                                                     *,                   1000,                200
+		Fal_OeBttstck,                                                         *,                   1000,                200
+		Fal_FoldingBttstck,                                                    *,                   1000,                200
+		Saiga_Bttstck,                                                         *,                   1000,                200
+		AKS74U_Bttstck,                                                        *,                   1000,                200
+		AK74_WoodBttstck,                                                      *,                   1000,                200
+		AK_PlasticBttstck,                                                     *,                   1000,                200
+		AK_WoodBttstck,                                                        *,                   1000,                200
+		AK_FoldingBttstck,                                                     *,                   1000,                200
+		M4_OEBttstck,                                                          *,                   1000,                200
+		M4_CQBBttstck,                                                         *,                   1000,                200
+		M4_MPBttstck,                                                          *,                   1000,                200
+		Rev_Tac21_Bttstck,                                                     *,                   -1,                  500
+		Rev_AK_Bttstck,                                                        *,                   -1,                  500
+	<Category>Supressors
+		PistolSuppressor,                                                      *,                   -1,                  1000
+		AK_Suppressor,                                                         *,                   -1,                  1000
+		M4_Suppressor,                                                         *,                   -1,                  1000
+		Rev_M200_Suppressor,                                                   *,                   -1,                  2000
+		Rev_R700_Suppressor,                                                   *,                   -1,                  2000
+		JebsGuns_KrissVector_Suppressor,                                       *,                   -1,                  2000
+	<Category>Compensators
+		Mosin_Compensator,                                                     *,                   2000,                100
+		MP5_Compensator,                                                       *,                   2000,                100
+	<Category>Bayonets
+		Mosin_Bayonet,                                                         *,                   2000,                100
+		M9A1_Bayonet,                                                          *,                   2000,                100
+		AK_Bayonet,                                                            *,                   2000,                100
+		SKS_Bayonet,                                                           *,                   2000,                100
+	<Category>Optics
+		M4_CarryHandleOptic,                                                   *,                   -1,                  200
+		BUISOptic,                                                             *,                   -1,                  500
+		FNP45_MRDSOptic,                                                       *,                   -1,                  500
+		ACOGOptic,                                                             *,                   -1,                  500
+		M68Optic,                                                              *,                   -1,                  500
+		M4_T3NRDSOptic,                                                        *,                   -1,                  500
+		KobraOptic,                                                            *,                   -1,                  500
+		KashtanOptic,                                                          *,                   -1,                  500
+		PUScopeOptic,                                                          *,                   -1,                  500
+		HuntingOptic,                                                          *,                   -1,                  500
+		PSO1Optic,                                                             *,                   -1,                  500
+		PSO11Optic,                                                            *,                   -1,                  500
+		KazuarOptic,                                                           *,                   -1,                  500
+		Universallight,                                                        *,                   -1,                  500
+		ACOGOptic_6x,                                                          *,                   -1,                  500
+	<Category>Specialist Gear
+		Rangefinder,                                                           *,                   5000,                500
+		NVGHeadstrap,                                                          *,                   10000,               1000
+		NVGoggles,                                                             *,                   100000,              10000
+	<Category>Grenades
+		RGD5Grenade,                                                           *,                   -1,                  1000
+		M67Grenade,                                                            *,                   -1,                  1000
+		M18SmokeGrenade_Red,                                                   *,                   -1,                  500
+		M18SmokeGrenade_Green,                                                 *,                   -1,                  500
+		M18SmokeGrenade_Yellow,                                                *,                   -1,                  500
+		M18SmokeGrenade_Purple,                                                *,                   -1,                  500
+		M18SmokeGrenade_White,                                                 *,                   -1,                  500
+		RDG2SmokeGrenade_Black,                                                *,                   -1,                  500
+		RDG2SmokeGrenade_White,                                                *,                   -1,                  500
+		FlashGrenade,                                                          *,                   -1,                  750
+	<Category>C4 and Traps
+		BearTrap,                                                              *,                   -1,                  10000
+		LandMineTrap,                                                          *,                   -1,                  5000		
+<Trader>Vehicles Trader // ID=4
+	<Category>Vanilla Vehicles
+		CivilianSedan,                                                         VNK,                 200000,              50000
+		CivilianSedan_Black,                                                   VNK,                 200000,              50000
+		CivilianSedan_Wine,                                                    VNK,                 200000,              50000
+		Hatchback_02,                                                     		VNK,                200000,              50000
+		Hatchback_02_Blue,                                        				VNK,                200000,              50000
+		Hatchback_02_Black,                                            			VNK,                200000,              50000
+		Sedan_02,                                                             	VNK,                200000,              50000
+		Sedan_02_Grey,                                                          VNK,                200000,              50000
+		Sedan_02_Red,                                                            VNK,               200000,              50000
+		OffroadHatchback,                                                     	VNK,                200000,              50000
+		OffroadHatchback_Blue,                                       			VNK,                200000,              50000
+		OffroadHatchback_White,                                           		 VNK,               200000,              50000		
+		Truck_01_Covered,                                                        VNK,               -1,              100000
+		Truck_01_Covered_Blue,                                                   VNK,               -1,              100000
+		Truck_01_Covered_Orange,                                                VNK,                -1,              100000			
+	<Category>Vehicle
+		Jeep_Cheroke_1984_byBlizzM,                                            VNK,                 300000,             50000
+		Nehr_PickupLada,                                                       VNK,                 300000,             50000
+		Nehr_PickupLada_Simple,                                                VNK,                 300000,             50000
+		Nehr_PickupLada_Simple_Blue,                                           VNK,                 300000,             50000
+		Nehr_PickupLada_Simple_Green,                                          VNK,                 300000,             50000
+		Nehr_PickupLada_Police,                                                VNK,                 -1,                 50000
+		Nehr_PickupLada_Fire,                                                  VNK,                 -1,                 50000
+		Nehr_PickupLada_Green,                                                 VNK,                 350000,             50000
+		Nehr_PickupLada_Blue,                                                  VNK,                 350000,             50000
+		Nehr_PickupLada_White,                                                 VNK,                 350000,             50000
+		Nehr_PickupLada_Toxic,                                                 VNK,                 400000,             50000
+		Nehr_PickupLada_Toxic_Green,                                           VNK,                 400000,             50000
+		Nehr_PickupLada_Toxic_Blue,                                            VNK,                 400000,             50000
+		CrSk_Land_Rover_Defender_110,                                          VNK,                 750000,             80000
+		CrSk_Land_Rover_Defender_110_UN,                                       VNK,                 750000,             80000
+		CrSk_Land_Rover_Defender_110_Green,                                    VNK,                 750000,             80000	
+		Kraz6322,                                                              VNK,                 1000000,            80000
+		Kraz6322_Blue,                                                         VNK,                 1000000,            80000
+		Kraz6322_White,                                                        VNK,                 1000000,            80000
+		Kraz6322_Camo,                                                         VNK,                 1000000,            80000
+		Kraz6322_Black,                                                        VNK,                 1000000,            80000
+		CrSk_Hummer_H2_6x6_Xin,                                                VNK,                 1500000,            150000
+		CrSk_Hummer_H2_6x6_Xin_Pink,                                           VNK,                 1500000,            150000
+		CrSk_Hummer_H2_6x6_Xin_Space,                                          VNK,                 1500000,            150000
+		CrSk_Hummer_H2_6x6_Xin_Camo,                                           VNK,                 1500000,            150000
+		CrSk_Hummer_H2_6x6_Xin_Black,                                          VNK,                 1500000,            150000		
+	<Category>Helis
+		RFFSHeli_Bo105m,                                                       VNK,                 4500000,            1000000
+		RFFSHeli_LittleBird_camo,                                               VNK,                4500000,            1000000
+		RFFSHeli_LittleBird,                                                   VNK,                 4500000,            1000000
+		RFFSHeli_Ka26,                                                       	VNK,                6000000,            1000000
+		RFFSHeli_Bell429,                                                  		VNK,                6000000,            1000000
+		RFFSHeli_Bell429_Police,                                                VNK,                6000000,            1000000
+		RFFSHeli_Bell429_Medic,                                                 VNK,                6000000,            1000000
+		RFFSHeli_Mi2,                                                			VNK,                6000000,            1000000
+		RFFSHeli_Mi2_Military,                                                  VNK,                6000000,            1000000
+		RFFSHeli_Mi2_Hornet,                                                    VNK,                6000000,            1000000
+		RFFSHeli_Apache,                                                       VNK,                 6000000,            1000000
+		RFFSHeli_Apache_Winter,                                                 VNK,                6000000,            1000000
+		RFFSHeli_R22,                                                 			VNK,                3000000,            1000000
+		RFFSHeli_R22_Black,                                                     VNK,                3000000,            1000000
+		RFFSHeli_R22_Red,                                                      VNK,                 3000000,            1000000
+	<Category>Vehicle Parts
+		HeadlightH7_Box,                                                       *,                   -1,                  1000
+		SparkPlug,                                                             *,                   -1,                  1000
+		CarBattery,                                                            *,                   10000,               5000
+		TruckBattery,                                                          *,                   15000,               6000
+		CarRadiator,                                                           *,                   2500,                2500
+		TireRepairKit,                                                         *,                   1000,                -1
+		300RoundBox,                                                           *,                   25000,               1000
+//		Nehr_PickupLadaWheel,                                                  *,                   10000,               1000
+	<Category>Keys
+		MCK_CarKey_Base,                                                       *,                   25000,               -1
+		MCK_CarKey_Blue,                                                       *,                   25000,               -1
+		MCK_CarKey_Green,                                                      *,                   25000,               -1
+		MCK_CarKey_White,                                                      *,                   25000,               -1
+		MCK_CarKey_Yellow,                                                     *,                   25000,               -1
+		MCK_CarKey_Red,                                                        *,                   25000,               -1
+		MCK_CarKeyTag_Base,                                                    *,                   1000,                -1
+		MCK_CarKeyTag_Black,                                                   *,                   1000,                -1
+		MCK_CarKeyTag_Blue,                                                    *,                   1000,                -1
+		MCK_CarKeyTag_Green,                                                   *,                   1000,                -1
+		MCK_CarKeyTag_Grey,                                                    *,                   1000,                -1
+		MCK_CarKeyTag_Red,                                                     *,                   1000,                -1
+		MCK_CarKeyTag_White,                                                   *,                   1000,                -1
+		MCK_CarKeyTag_Yellow,                                                  *,                   1000,                -1
+	<Category>Extras
+		rf_helipad_kit,                                                        *,                   1000000,              75000	
+//		RFFSHeli_flight_case                                                   *,                   1000000,              -1
+//		RFFSHeli_flight_case_red                                               *,               1000000,              -1
+//		RFFSHeli_flight_case _blue                                             *,              1000000,              -1		
+<FileEnd>
